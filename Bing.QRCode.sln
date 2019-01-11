@@ -3,9 +3,46 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.168
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-document", "00-document", "{468C599C-82CC-4498-B04E-31145CA01172}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-src", "01-src", "{D6C46E4E-49C1-4185-919C-F768CC6B93E3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-tests", "02-tests", "{7315F93E-24D0-4467-8F34-5555A2406FAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-sample", "03-sample", "{44423FB9-FD1C-4A43-91C1-06514DDFED6B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bing.QRCode", "src\Bing.QRCode\Bing.QRCode.csproj", "{27B8BFB2-C62E-4CFC-BBF9-1F8FEA3B5D2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bing.QRCode.QRCoder", "src\Bing.QRCode.QRCoder\Bing.QRCode.QRCoder.csproj", "{4F3E95AD-41D0-4A8F-A4BE-443A44145865}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bing.QRCode.ZXing", "src\Bing.QRCode.ZXing\Bing.QRCode.ZXing.csproj", "{B90F4611-EC35-43B9-804E-CAC1D1894F3D}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27B8BFB2-C62E-4CFC-BBF9-1F8FEA3B5D2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27B8BFB2-C62E-4CFC-BBF9-1F8FEA3B5D2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27B8BFB2-C62E-4CFC-BBF9-1F8FEA3B5D2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27B8BFB2-C62E-4CFC-BBF9-1F8FEA3B5D2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F3E95AD-41D0-4A8F-A4BE-443A44145865}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F3E95AD-41D0-4A8F-A4BE-443A44145865}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F3E95AD-41D0-4A8F-A4BE-443A44145865}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F3E95AD-41D0-4A8F-A4BE-443A44145865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B90F4611-EC35-43B9-804E-CAC1D1894F3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B90F4611-EC35-43B9-804E-CAC1D1894F3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B90F4611-EC35-43B9-804E-CAC1D1894F3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B90F4611-EC35-43B9-804E-CAC1D1894F3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27B8BFB2-C62E-4CFC-BBF9-1F8FEA3B5D2C} = {D6C46E4E-49C1-4185-919C-F768CC6B93E3}
+		{4F3E95AD-41D0-4A8F-A4BE-443A44145865} = {D6C46E4E-49C1-4185-919C-F768CC6B93E3}
+		{B90F4611-EC35-43B9-804E-CAC1D1894F3D} = {D6C46E4E-49C1-4185-919C-F768CC6B93E3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6883B0B9-B833-4497-8285-0C04C48C5E4E}
