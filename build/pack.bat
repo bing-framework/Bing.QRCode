@@ -6,7 +6,7 @@ rem clear old packages
 del output\* /q/f/s
 
 rem build
-dotnet build Bing.NetCore.sln -c Release
+dotnet build Bing.QRCode.sln -c Release
 
 rem pack
 dotnet pack ./src/Bing.QRCode/Bing.QRCode.csproj
