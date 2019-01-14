@@ -1,5 +1,5 @@
-﻿using System.Drawing;
-using System.IO;
+﻿using System.IO;
+using Bing.QRCode.Core;
 using Bing.QRCode.Enums;
 
 namespace Bing.QRCode.Abstractions
@@ -11,46 +11,11 @@ namespace Bing.QRCode.Abstractions
     public interface IQRCodeService
     {
         /// <summary>
-        /// 设置二维码尺寸
+        /// 设置二维码参数
         /// </summary>
-        /// <param name="size">二维码尺寸</param>
+        /// <param name="param">二维码参数</param>
         /// <returns></returns>
-        IQRCodeService Size(int size);
-
-        /// <summary>
-        /// 设置容错级别
-        /// </summary>
-        /// <param name="level">容错级别</param>
-        /// <returns></returns>
-        IQRCodeService Correction(ErrorCorrectionLevel level);
-
-        /// <summary>
-        /// 设置Logo
-        /// </summary>
-        /// <param name="logoPath">Logo文件路径</param>
-        /// <returns></returns>
-        IQRCodeService Logo(string logoPath);
-
-        /// <summary>
-        /// 设置前景色
-        /// </summary>
-        /// <param name="color">前景色</param>
-        /// <returns></returns>
-        IQRCodeService Foreground(Color color);
-
-        /// <summary>
-        /// 设置背景色
-        /// </summary>
-        /// <param name="color">背景色</param>
-        /// <returns></returns>
-        IQRCodeService Background(Color color);
-
-        /// <summary>
-        /// 设置内容
-        /// </summary>
-        /// <param name="content">内容</param>
-        /// <returns></returns>
-        IQRCodeService Content(string content);
+        IQRCodeService Param(QRCodeParam param);
 
         /// <summary>
         /// 转换成流
@@ -69,5 +34,19 @@ namespace Bing.QRCode.Abstractions
         /// </summary>
         /// <returns></returns>
         string ToBase64String();
+
+        /// <summary>
+        /// 转换成Base64字符串，并附带前缀
+        /// </summary>
+        /// <param name="type">图片类型</param>
+        /// <returns></returns>
+        string ToBase64String(Base64ImageType type);
+
+        /// <summary>
+        /// 写入到文件
+        /// </summary>
+        /// <param name="path">文件路径</param>
+        /// <returns></returns>
+        string WriteToFile(string path);
     }
 }

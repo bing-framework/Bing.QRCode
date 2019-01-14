@@ -16,4 +16,8 @@ Bing是一个.net core平台下的应用框架，旨在于提升小型团队的�
     <DocumentationFile>..\..\output\release\netstandard2.0\Bing.QRCode.xml</DocumentationFile>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.5.1" />
+  </ItemGroup>
+
 </Project>
