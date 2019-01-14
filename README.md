@@ -1,5 +1,6 @@
 # Bing.QRCode
 [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://mit-license.org/)
+
 Bing.QRCode是Bing应用框架的二维码操作核心库。
 主要用于二维码相关功能操作。
 
