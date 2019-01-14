@@ -4,6 +4,8 @@ Bing.QRCode是Bing应用框架的二维码操作核心库。
 主要用于二维码相关功能操作。
 
 ## Nuget Packages
+|Nuget|版本号|说明|
+|---|---|---|
 |Bing.QRCode|[![NuGet Badge](https://buildstats.info/nuget/Bing.QRCode?includePreReleases=true)](https://www.nuget.org/packages/Bing.Tools.QrCode)|
 |Bing.QRCode.QRCoder|[![NuGet Badge](https://buildstats.info/nuget/Bing.QRCode.QRCoder?includePreReleases=true)](https://www.nuget.org/packages/Bing.Tools.QrCode.QRCoder)|
 |Bing.QRCode.ZXing|[![NuGet Badge](https://buildstats.info/nuget/Bing.QRCode.ZXing?includePreReleases=true)](https://www.nuget.org/packages/Bing.Tools.QrCode.ZXing)|
