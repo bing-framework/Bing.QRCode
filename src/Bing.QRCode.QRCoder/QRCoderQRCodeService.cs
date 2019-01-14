@@ -67,7 +67,7 @@ namespace Bing.QRCode.QRCoder
         {
             QRCodeData data = _generator.CreateQrCode(param.Content, _level);
             QC.QRCode qrcode = new QC.QRCode(data);
-            using (var bitmap = qrcode.GetGraphic(param.Size, param.Foreground, param.Background, GetLogo()))
+            using (var bitmap = qrcode.GetGraphic(param.Size, param.Foreground, param.Background, GetLogo(),iconBorderWidth:20))
             {
                 using (var ms = new MemoryStream())
                 {

@@ -83,7 +83,7 @@ namespace Bing.QRCode.ZXing
                 {
                     CharacterSet = "UTF-8",
                     ErrorCorrection = _level,
-                    Margin = 0,
+                    Margin = 2,
                     Width = param.Size,
                     Height = param.Size,
                 },

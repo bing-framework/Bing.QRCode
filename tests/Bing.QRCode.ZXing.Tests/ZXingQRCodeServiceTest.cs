@@ -114,7 +114,7 @@ namespace Bing.QRCode.ZXing.Tests
             {
                 Content = Content,
                 Level = ErrorCorrectionLevel.Q,
-                Size = 100,
+                Size = 1000,
                 Logo = _logo
             });
             var result = _service.WriteToFile(OutputPath);
