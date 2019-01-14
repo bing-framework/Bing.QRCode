@@ -61,6 +61,7 @@ namespace Bing.QRCode.QRCoder
         /// <summary>
         /// 创建二维码
         /// </summary>
+        /// <param name="param">二维码参数</param>
         /// <returns></returns>
         protected override byte[] Create(QRCodeParam param)
         {

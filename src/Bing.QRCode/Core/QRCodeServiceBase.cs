@@ -114,6 +114,7 @@ namespace Bing.QRCode.Core
         /// <summary>
         /// 创建二维码
         /// </summary>
+        /// <param name="param">二维码参数</param>
         /// <returns></returns>
         protected abstract byte[] Create(QRCodeParam param);
 
