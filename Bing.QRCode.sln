@@ -28,11 +28,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bing.QRCode.ZXing.Tests", "tests\Bing.QRCode.ZXing.Tests\Bing.QRCode.ZXing.Tests.csproj", "{F0D7BF11-FF97-43C2-89D1-67D4DD99D22B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{44F3ABF4-B0D3-448F-99E9-5B0E57FFABE2}"
-	ProjectSection(SolutionItems) = preProject
-		common.props = common.props
-		Publish.bat = Publish.bat
-		version.props = version.props
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{8327ADB1-77B6-4968-A112-F731C593F4C6}"
 	ProjectSection(SolutionItems) = preProject
