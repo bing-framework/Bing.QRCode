@@ -1,0 +1,12 @@
+﻿<Project>
+  <PropertyGroup>
+    <AssemblyName>Bing.QRCode</AssemblyName>
+    <PackageId>Bing.QRCode</PackageId>
+    <Description>Bing.QRCode是Bing应用框架的二维码操作核心类库。</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+</Project>

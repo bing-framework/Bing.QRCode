@@ -15,7 +15,6 @@ namespace Bing.QRCode.ZXing
         /// </summary>
         /// <param name="image">图片</param>
         /// <param name="n">缩放比例</param>
-        /// <returns></returns>
         public static Image Zoom(Image image, double n)
         {
             // 计算缩略图宽高
@@ -44,7 +43,6 @@ namespace Bing.QRCode.ZXing
         /// <param name="qrImage">二维码图片</param>
         /// <param name="logoImage">Logo图片</param>
         /// <param name="n">缩放比例</param>
-        /// <returns></returns>
         public static byte[] MergeImage(Bitmap qrImage, Bitmap logoImage, double n = 0.23)
         {
             int margin = 10;
@@ -112,7 +110,6 @@ namespace Bing.QRCode.ZXing
         /// </summary>
         /// <param name="rect">区域</param>
         /// <param name="cornerRadius">角度</param>
-        /// <returns></returns>
         private static GraphicsPath CreateRoundedRectanglePath(Rectangle rect, int cornerRadius)
         {
             GraphicsPath roundedRect = new GraphicsPath();

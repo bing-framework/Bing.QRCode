@@ -1,0 +1,209 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bing.QRCode</name>
+    </assembly>
+    <members>
+        <member name="T:Bing.QRCode.Abstractions.IQRCodeService">
+            <summary>
+            二维码服务
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.Abstractions.IQRCodeService.Param(Bing.QRCode.Core.QRCodeParam)">
+            <summary>
+            设置二维码参数
+            </summary>
+            <param name="param">二维码参数</param>
+        </member>
+        <member name="M:Bing.QRCode.Abstractions.IQRCodeService.ToStream">
+            <summary>
+            转换成流
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.Abstractions.IQRCodeService.ToBytes">
+            <summary>
+            转换成字节数组
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.Abstractions.IQRCodeService.ToBase64String">
+            <summary>
+            转换成Base64字符串
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.Abstractions.IQRCodeService.ToBase64String(Bing.QRCode.Enums.Base64ImageType)">
+            <summary>
+            转换成Base64字符串，并附带前缀
+            </summary>
+            <param name="type">图片类型</param>
+        </member>
+        <member name="M:Bing.QRCode.Abstractions.IQRCodeService.WriteToFile(System.String)">
+            <summary>
+            写入到文件
+            </summary>
+            <param name="path">文件路径</param>
+        </member>
+        <member name="T:Bing.QRCode.Core.QRCodeParam">
+            <summary>
+            二维码参数
+            </summary>
+        </member>
+        <member name="P:Bing.QRCode.Core.QRCodeParam.Size">
+            <summary>
+            尺寸
+            </summary>
+        </member>
+        <member name="P:Bing.QRCode.Core.QRCodeParam.Level">
+            <summary>
+            容错级别
+            </summary>
+        </member>
+        <member name="P:Bing.QRCode.Core.QRCodeParam.Foreground">
+            <summary>
+            前景色
+            </summary>
+        </member>
+        <member name="P:Bing.QRCode.Core.QRCodeParam.Background">
+            <summary>
+            背景色
+            </summary>
+        </member>
+        <member name="P:Bing.QRCode.Core.QRCodeParam.Logo">
+            <summary>
+            LOGO图片路径
+            </summary>
+        </member>
+        <member name="P:Bing.QRCode.Core.QRCodeParam.Content">
+            <summary>
+            内容
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.Core.QRCodeParam.#ctor">
+            <summary>
+            初始化一个<see cref="T:Bing.QRCode.Core.QRCodeParam"/>类型的实例
+            </summary>
+        </member>
+        <member name="T:Bing.QRCode.Core.QRCodeServiceBase">
+            <summary>
+            二维码服务基类
+            </summary>
+        </member>
+        <member name="F:Bing.QRCode.Core.QRCodeServiceBase._param">
+            <summary>
+            二维码参数
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.Core.QRCodeServiceBase.Param(Bing.QRCode.Core.QRCodeParam)">
+            <summary>
+            设置二维码参数
+            </summary>
+            <param name="param">二维码参数</param>
+        </member>
+        <member name="M:Bing.QRCode.Core.QRCodeServiceBase.ToStream">
+            <summary>
+            转换成流
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.Core.QRCodeServiceBase.ToBytes">
+            <summary>
+            转换成字节数组
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.Core.QRCodeServiceBase.ToBase64String">
+            <summary>
+            转换成Base64字符串
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.Core.QRCodeServiceBase.ToBase64String(Bing.QRCode.Enums.Base64ImageType)">
+            <summary>
+            转换成Base64字符串，并附带前缀
+            </summary>
+            <param name="type">图片类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bing.QRCode.Core.QRCodeServiceBase.GetBase64StringPrefix(Bing.QRCode.Enums.Base64ImageType)">
+            <summary>
+            获取Base64字符串前缀
+            </summary>
+            <param name="type">图片类型</param>
+            <returns></returns>
+        </member>
+        <member name="M:Bing.QRCode.Core.QRCodeServiceBase.WriteToFile(System.String)">
+            <summary>
+            写入到文件
+            </summary>
+            <param name="path">文件路径</param>
+        </member>
+        <member name="M:Bing.QRCode.Core.QRCodeServiceBase.HandlerCorrectionLevel(Bing.QRCode.Enums.ErrorCorrectionLevel)">
+            <summary>
+            处理容错级别
+            </summary>
+            <param name="level">容错级别</param>
+        </member>
+        <member name="M:Bing.QRCode.Core.QRCodeServiceBase.Init(Bing.QRCode.Core.QRCodeParam)">
+            <summary>
+            初始化
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.Core.QRCodeServiceBase.Create(Bing.QRCode.Core.QRCodeParam)">
+            <summary>
+            创建二维码
+            </summary>
+            <param name="param">二维码参数</param>
+        </member>
+        <member name="M:Bing.QRCode.Core.QRCodeServiceBase.GetLogo">
+            <summary>
+            获取Logo文件
+            </summary>
+        </member>
+        <member name="T:Bing.QRCode.Enums.Base64ImageType">
+            <summary>
+            Base64字符串图片类型
+            </summary>
+        </member>
+        <member name="F:Bing.QRCode.Enums.Base64ImageType.Png">
+            <summary>
+            image/png
+            </summary>
+        </member>
+        <member name="F:Bing.QRCode.Enums.Base64ImageType.Jpeg">
+            <summary>
+            image/jpeg
+            </summary>
+        </member>
+        <member name="F:Bing.QRCode.Enums.Base64ImageType.XIcon">
+            <summary>
+            image/x-icon
+            </summary>
+        </member>
+        <member name="F:Bing.QRCode.Enums.Base64ImageType.Gif">
+            <summary>
+            image/gif
+            </summary>
+        </member>
+        <member name="T:Bing.QRCode.Enums.ErrorCorrectionLevel">
+            <summary>
+            容错级别
+            </summary>
+        </member>
+        <member name="F:Bing.QRCode.Enums.ErrorCorrectionLevel.L">
+            <summary>
+            可以纠正最大7%的错误
+            </summary>
+        </member>
+        <member name="F:Bing.QRCode.Enums.ErrorCorrectionLevel.M">
+            <summary>
+            可以纠正最大15%的错误
+            </summary>
+        </member>
+        <member name="F:Bing.QRCode.Enums.ErrorCorrectionLevel.Q">
+            <summary>
+            可以纠正最大25%的错误
+            </summary>
+        </member>
+        <member name="F:Bing.QRCode.Enums.ErrorCorrectionLevel.H">
+            <summary>
+            可以纠正最大30%的错误
+            </summary>
+        </member>
+    </members>
+</doc>

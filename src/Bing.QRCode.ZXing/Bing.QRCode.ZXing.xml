@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bing.QRCode.ZXing</name>
+    </assembly>
+    <members>
+        <member name="T:Bing.QRCode.ZXing.ImageUtil">
+            <summary>
+            图片操作
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.ZXing.ImageUtil.Zoom(System.DrawingCore.Image,System.Double)">
+            <summary>
+            图片缩放
+            </summary>
+            <param name="image">图片</param>
+            <param name="n">缩放比例</param>
+        </member>
+        <member name="M:Bing.QRCode.ZXing.ImageUtil.MergeImage(System.DrawingCore.Bitmap,System.DrawingCore.Bitmap,System.Double)">
+            <summary>
+            合并图片
+            参考：http://www.cnblogs.com/zoro-zero/p/6225697.html
+            </summary>
+            <param name="qrImage">二维码图片</param>
+            <param name="logoImage">Logo图片</param>
+            <param name="n">缩放比例</param>
+        </member>
+        <member name="M:Bing.QRCode.ZXing.ImageUtil.CreateRoundedRectanglePath(System.DrawingCore.Rectangle,System.Int32)">
+            <summary>
+            创建圆角矩形
+            </summary>
+            <param name="rect">区域</param>
+            <param name="cornerRadius">角度</param>
+        </member>
+        <member name="T:Bing.QRCode.ZXing.ZXingQRCodeService">
+            <summary>
+            ZXing.Net二维码服务
+            </summary>
+        </member>
+        <member name="F:Bing.QRCode.ZXing.ZXingQRCodeService._level">
+            <summary>
+            ZXing.Net容错级别
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.ZXing.ZXingQRCodeService.HandlerCorrectionLevel(Bing.QRCode.Enums.ErrorCorrectionLevel)">
+            <summary>
+            处理容错级别
+            </summary>
+            <param name="level">容错级别</param>
+        </member>
+        <member name="M:Bing.QRCode.ZXing.ZXingQRCodeService.Create(Bing.QRCode.Core.QRCodeParam)">
+            <summary>
+            创建二维码
+            </summary>
+            <param name="param">二维码参数</param>
+        </member>
+        <member name="M:Bing.QRCode.ZXing.ZXingQRCodeService.GetBitmap(Bing.QRCode.Core.QRCodeParam)">
+            <summary>
+            获取二维码图片
+            </summary>
+            <param name="param">二维码参数</param>
+        </member>
+    </members>
+</doc>

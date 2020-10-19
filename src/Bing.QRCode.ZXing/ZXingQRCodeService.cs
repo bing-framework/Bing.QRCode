@@ -51,7 +51,6 @@ namespace Bing.QRCode.ZXing
         /// 创建二维码
         /// </summary>
         /// <param name="param">二维码参数</param>
-        /// <returns></returns>
         protected override byte[] Create(QRCodeParam param)
         {
             using (var bitmap=GetBitmap(param))
@@ -73,13 +72,12 @@ namespace Bing.QRCode.ZXing
         /// 获取二维码图片
         /// </summary>
         /// <param name="param">二维码参数</param>
-        /// <returns></returns>
         private Bitmap GetBitmap(QRCodeParam param)
         {
             BarcodeWriter<Bitmap> bitmapBarcodeWriter = new BarcodeWriter<Bitmap>()
             {
                 Format = BarcodeFormat.QR_CODE,
-                Options = new QrCodeEncodingOptions()
+                Options = new QrCodeEncodingOptions
                 {
                     CharacterSet = "UTF-8",
                     ErrorCorrection = _level,
@@ -87,7 +85,7 @@ namespace Bing.QRCode.ZXing
                     Width = param.Size,
                     Height = param.Size,
                 },
-                Renderer = new BitmapRenderer()
+                Renderer = new BitmapRenderer
                 {
                     Foreground = Color.FromName(param.Foreground.Name),
                     Background = Color.FromName(param.Background.Name)

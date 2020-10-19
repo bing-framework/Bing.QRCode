@@ -1,0 +1,13 @@
+﻿<Project>
+  <PropertyGroup>
+    <AssemblyName>Bing.QRCode.ZXing</AssemblyName>
+    <PackageId>Bing.QRCode.ZXing</PackageId>
+    <Description>Bing.QRCode.ZXing是Bing应用框架的ZXing.Net二维码操作核心类库。</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ZXing.Net" Version="0.16.6" />
+    <PackageReference Include="ZXing.Net.Bindings.ZKWeb.System.Drawing" Version="0.16.5" />
+  </ItemGroup>
+
+</Project>

@@ -20,7 +20,6 @@ namespace Bing.QRCode.Core
         /// 设置二维码参数
         /// </summary>
         /// <param name="param">二维码参数</param>
-        /// <returns></returns>
         public IQRCodeService Param(QRCodeParam param)
         {
             _param = param;
@@ -31,39 +30,24 @@ namespace Bing.QRCode.Core
         /// <summary>
         /// 转换成流
         /// </summary>
-        /// <returns></returns>
-        public virtual Stream ToStream()
-        {
-            return new MemoryStream(Create(_param));
-        }
+        public virtual Stream ToStream() => new MemoryStream(Create(_param));
 
         /// <summary>
         /// 转换成字节数组
         /// </summary>
-        /// <returns></returns>
-        public virtual byte[] ToBytes()
-        {
-            return Create(_param);
-        }
+        public virtual byte[] ToBytes() => Create(_param);
 
         /// <summary>
         /// 转换成Base64字符串
         /// </summary>
-        /// <returns></returns>
-        public virtual string ToBase64String()
-        {
-            return Convert.ToBase64String(Create(_param));
-        }
+        public virtual string ToBase64String() => Convert.ToBase64String(Create(_param));
 
         /// <summary>
         /// 转换成Base64字符串，并附带前缀
         /// </summary>
         /// <param name="type">图片类型</param>
         /// <returns></returns>
-        public string ToBase64String(Base64ImageType type)
-        {
-            return $"{GetBase64StringPrefix(type)}{ToBase64String()}";
-        }
+        public string ToBase64String(Base64ImageType type) => $"{GetBase64StringPrefix(type)}{ToBase64String()}";
 
         /// <summary>
         /// 获取Base64字符串前缀
@@ -90,7 +74,6 @@ namespace Bing.QRCode.Core
         /// 写入到文件
         /// </summary>
         /// <param name="path">文件路径</param>
-        /// <returns></returns>
         public virtual string WriteToFile(string path)
         {
             File.WriteAllBytes(path, Create(_param));
@@ -106,29 +89,21 @@ namespace Bing.QRCode.Core
         /// <summary>
         /// 初始化
         /// </summary>
-        protected virtual void Init(QRCodeParam param)
-        {
-            HandlerCorrectionLevel(param.Level);
-        }
+        protected virtual void Init(QRCodeParam param) => HandlerCorrectionLevel(param.Level);
 
         /// <summary>
         /// 创建二维码
         /// </summary>
         /// <param name="param">二维码参数</param>
-        /// <returns></returns>
         protected abstract byte[] Create(QRCodeParam param);
 
         /// <summary>
         /// 获取Logo文件
         /// </summary>
-        /// <returns></returns>
         protected virtual Bitmap GetLogo()
         {
             if (string.IsNullOrWhiteSpace(_param.Logo))
-            {
                 return null;
-            }
-
             return Image.FromFile(_param.Logo) as Bitmap;
         }
     }

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Bing.QRCode.QRCoder</name>
+    </assembly>
+    <members>
+        <member name="T:Bing.QRCode.QRCoder.QRCoderQRCodeService">
+            <summary>
+            QRCoder二维码服务
+            </summary>
+        </member>
+        <member name="F:Bing.QRCode.QRCoder.QRCoderQRCodeService._level">
+            <summary>
+            QRCoder容错级别
+            </summary>
+        </member>
+        <member name="F:Bing.QRCode.QRCoder.QRCoderQRCodeService._generator">
+            <summary>
+            二维码生成器
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.QRCoder.QRCoderQRCodeService.#ctor">
+            <summary>
+            初始化一个<see cref="T:Bing.QRCode.QRCoder.QRCoderQRCodeService"/>类型的实例
+            </summary>
+        </member>
+        <member name="M:Bing.QRCode.QRCoder.QRCoderQRCodeService.HandlerCorrectionLevel(Bing.QRCode.Enums.ErrorCorrectionLevel)">
+            <summary>
+            处理容错级别
+            </summary>
+            <param name="level">容错级别</param>
+        </member>
+        <member name="M:Bing.QRCode.QRCoder.QRCoderQRCodeService.Create(Bing.QRCode.Core.QRCodeParam)">
+            <summary>
+            创建二维码
+            </summary>
+            <param name="param">二维码参数</param>
+        </member>
+    </members>
+</doc>

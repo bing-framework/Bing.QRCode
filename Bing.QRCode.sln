@@ -1,11 +1,14 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28307.168
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30523.141
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "00-document", "00-document", "{468C599C-82CC-4498-B04E-31145CA01172}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionItems", "_SolutionItems", "{468C599C-82CC-4498-B04E-31145CA01172}"
 	ProjectSection(SolutionItems) = preProject
+		common.props = common.props
+		Publish.bat = Publish.bat
 		README.md = README.md
+		version.props = version.props
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-src", "01-src", "{D6C46E4E-49C1-4185-919C-F768CC6B93E3}"
@@ -20,9 +23,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bing.QRCode.QRCoder", "src\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bing.QRCode.ZXing", "src\Bing.QRCode.ZXing\Bing.QRCode.ZXing.csproj", "{B90F4611-EC35-43B9-804E-CAC1D1894F3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bing.QRCode.QRCoder.Tests", "tests\Bing.QRCode.QRCoder.Tests\Bing.QRCode.QRCoder.Tests.csproj", "{DEF05396-5D71-4966-A897-F9166A6635C6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bing.QRCode.QRCoder.Tests", "tests\Bing.QRCode.QRCoder.Tests\Bing.QRCode.QRCoder.Tests.csproj", "{DEF05396-5D71-4966-A897-F9166A6635C6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bing.QRCode.ZXing.Tests", "tests\Bing.QRCode.ZXing.Tests\Bing.QRCode.ZXing.Tests.csproj", "{F0D7BF11-FF97-43C2-89D1-67D4DD99D22B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bing.QRCode.ZXing.Tests", "tests\Bing.QRCode.ZXing.Tests\Bing.QRCode.ZXing.Tests.csproj", "{F0D7BF11-FF97-43C2-89D1-67D4DD99D22B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "asset", "asset", "{44F3ABF4-B0D3-448F-99E9-5B0E57FFABE2}"
+	ProjectSection(SolutionItems) = preProject
+		common.props = common.props
+		Publish.bat = Publish.bat
+		version.props = version.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{8327ADB1-77B6-4968-A112-F731C593F4C6}"
+	ProjectSection(SolutionItems) = preProject
+		asset\props\misc.props = asset\props\misc.props
+		asset\props\package.props = asset\props\package.props
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -60,6 +76,8 @@ Global
 		{B90F4611-EC35-43B9-804E-CAC1D1894F3D} = {D6C46E4E-49C1-4185-919C-F768CC6B93E3}
 		{DEF05396-5D71-4966-A897-F9166A6635C6} = {7315F93E-24D0-4467-8F34-5555A2406FAB}
 		{F0D7BF11-FF97-43C2-89D1-67D4DD99D22B} = {7315F93E-24D0-4467-8F34-5555A2406FAB}
+		{44F3ABF4-B0D3-448F-99E9-5B0E57FFABE2} = {468C599C-82CC-4498-B04E-31145CA01172}
+		{8327ADB1-77B6-4968-A112-F731C593F4C6} = {44F3ABF4-B0D3-448F-99E9-5B0E57FFABE2}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6883B0B9-B833-4497-8285-0C04C48C5E4E}
