@@ -42,6 +42,13 @@
             </summary>
             <param name="path">文件路径</param>
         </member>
+        <member name="M:Bing.QRCode.Extensions.AddQRCodeService``1(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            注册二维码服务
+            </summary>
+            <typeparam name="TService">二维码服务</typeparam>
+            <param name="services">服务集合</param>
+        </member>
         <member name="T:Bing.QRCode.Core.QRCodeParam">
             <summary>
             二维码参数
@@ -75,6 +82,11 @@
         <member name="P:Bing.QRCode.Core.QRCodeParam.Content">
             <summary>
             内容
+            </summary>
+        </member>
+        <member name="P:Bing.QRCode.Core.QRCodeParam.DrawBorder">
+            <summary>
+            绘制边框
             </summary>
         </member>
         <member name="M:Bing.QRCode.Core.QRCodeParam.#ctor">

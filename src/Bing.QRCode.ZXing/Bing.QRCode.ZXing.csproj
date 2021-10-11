@@ -1,10 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="Bing.QRCode.ZXing._shared.props" />
+  <Import Project="project.props" />
+
+  <Import Project="project.dependency.props" />
 
   <Import Project="..\..\common.props" />
-
-  <ItemGroup>
-    <ProjectReference Include="..\Bing.QRCode\Bing.QRCode.csproj" />
-  </ItemGroup>
 
 </Project>

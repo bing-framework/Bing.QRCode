@@ -21,6 +21,7 @@ Bing.QRCode是Bing应用框架的二维码操作核心库。
 - [QRCoder](https://github.com/codebude/QRCoder)
 - [ZXing.Net](https://github.com/micjahn/ZXing.Net)
 - [ZXing.Net.Bindings.ZKWeb.System.Drawing](https://github.com/micjahn/ZXing.Net)
+- [ZXing.Net.Bindings.Windows.Compatibility](https://github.com/micjahn/ZXing.Net)
 
 ## Demo
 ### 简单二维码

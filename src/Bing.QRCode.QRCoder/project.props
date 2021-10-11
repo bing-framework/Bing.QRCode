@@ -4,9 +4,4 @@
     <PackageId>Bing.QRCode.QRCoder</PackageId>
     <Description>Bing.QRCode.QRCoder是Bing应用框架的QRCoder二维码操作核心类库。</Description>
   </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="QRCoder" Version="1.3.9" />
-  </ItemGroup>
-
 </Project>

@@ -1,13 +1,13 @@
 ﻿using System;
-using System.DrawingCore;
-using System.DrawingCore.Imaging;
+using System.Drawing;
+using System.Drawing.Imaging;
 using System.IO;
 using Bing.QRCode.Abstractions;
 using Bing.QRCode.Core;
 using Bing.QRCode.Enums;
 using ZXing;
 using ZXing.QrCode;
-using ZXing.ZKWeb.Rendering;
+using ZXing.Windows.Compatibility;
 using ZQI = global::ZXing.QrCode.Internal;
 
 namespace Bing.QRCode.ZXing
@@ -53,19 +53,17 @@ namespace Bing.QRCode.ZXing
         /// <param name="param">二维码参数</param>
         protected override byte[] Create(QRCodeParam param)
         {
-            using (var bitmap=GetBitmap(param))
+            using var bitmap = GetBitmap(param);
+            if (string.IsNullOrWhiteSpace(param.Logo))
             {
-                if (string.IsNullOrWhiteSpace(param.Logo))
+                using (var ms = new MemoryStream())
                 {
-                    using (var ms=new MemoryStream())
-                    {
-                        bitmap.Save(ms,ImageFormat.Png);
-                        return ms.ToArray();
-                    }
+                    bitmap.Save(ms, ImageFormat.Png);
+                    return ms.ToArray();
                 }
-
-                return ImageUtil.MergeImage(bitmap, new Bitmap(param.Logo));
             }
+
+            return ImageUtil.MergeImage(bitmap, new Bitmap(param.Logo));
         }
 
         /// <summary>
@@ -74,14 +72,14 @@ namespace Bing.QRCode.ZXing
         /// <param name="param">二维码参数</param>
         private Bitmap GetBitmap(QRCodeParam param)
         {
-            BarcodeWriter<Bitmap> bitmapBarcodeWriter = new BarcodeWriter<Bitmap>()
+            var bitmapBarcodeWriter = new BarcodeWriter<Bitmap>
             {
                 Format = BarcodeFormat.QR_CODE,
                 Options = new QrCodeEncodingOptions
                 {
                     CharacterSet = "UTF-8",
                     ErrorCorrection = _level,
-                    Margin = 2,
+                    Margin = param.DrawBorder ? 2 : 0,
                     Width = param.Size,
                     Height = param.Size,
                 },

@@ -40,6 +40,11 @@ namespace Bing.QRCode.Core
         public string Content { get; set; }
 
         /// <summary>
+        /// 绘制边框
+        /// </summary>
+        public bool DrawBorder { get; set; }
+
+        /// <summary>
         /// 初始化一个<see cref="QRCodeParam"/>类型的实例
         /// </summary>
         public QRCodeParam()
@@ -50,6 +55,7 @@ namespace Bing.QRCode.Core
             Foreground = Color.Black;
             Background = Color.White;
             Content = string.Empty;
+            DrawBorder = false;
         }
     }
 }

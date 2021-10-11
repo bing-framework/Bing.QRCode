@@ -5,7 +5,7 @@ using Bing.QRCode.Abstractions;
 using Bing.QRCode.Core;
 using Bing.QRCode.Enums;
 using QRCoder;
-using QC= global::QRCoder;
+using QC = global::QRCoder;
 
 namespace Bing.QRCode.QRCoder
 {
@@ -55,7 +55,7 @@ namespace Bing.QRCode.QRCoder
                     break;
                 default:
                     throw new NotImplementedException("未知容错级别");
-            }            
+            }
         }
 
         /// <summary>
@@ -65,8 +65,8 @@ namespace Bing.QRCode.QRCoder
         protected override byte[] Create(QRCodeParam param)
         {
             QRCodeData data = _generator.CreateQrCode(param.Content, _level);
-            QC.QRCode qrcode = new QC.QRCode(data);
-            using (var bitmap = qrcode.GetGraphic(param.Size, param.Foreground, param.Background, GetLogo(),iconBorderWidth:20))
+            var qrcode = new QC.QRCode(data);
+            using (var bitmap = qrcode.GetGraphic(param.Size, param.Foreground, param.Background, GetLogo(), iconBorderWidth: 20, drawQuietZones: false))
             {
                 using (var ms = new MemoryStream())
                 {

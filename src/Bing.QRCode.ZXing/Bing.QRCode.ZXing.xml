@@ -9,14 +9,14 @@
             图片操作
             </summary>
         </member>
-        <member name="M:Bing.QRCode.ZXing.ImageUtil.Zoom(System.DrawingCore.Image,System.Double)">
+        <member name="M:Bing.QRCode.ZXing.ImageUtil.Zoom(System.Drawing.Image,System.Double)">
             <summary>
             图片缩放
             </summary>
             <param name="image">图片</param>
             <param name="n">缩放比例</param>
         </member>
-        <member name="M:Bing.QRCode.ZXing.ImageUtil.MergeImage(System.DrawingCore.Bitmap,System.DrawingCore.Bitmap,System.Double)">
+        <member name="M:Bing.QRCode.ZXing.ImageUtil.MergeImage(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Double)">
             <summary>
             合并图片
             参考：http://www.cnblogs.com/zoro-zero/p/6225697.html
@@ -25,7 +25,7 @@
             <param name="logoImage">Logo图片</param>
             <param name="n">缩放比例</param>
         </member>
-        <member name="M:Bing.QRCode.ZXing.ImageUtil.CreateRoundedRectanglePath(System.DrawingCore.Rectangle,System.Int32)">
+        <member name="M:Bing.QRCode.ZXing.ImageUtil.CreateRoundedRectanglePath(System.Drawing.Rectangle,System.Int32)">
             <summary>
             创建圆角矩形
             </summary>
