@@ -36,5 +36,11 @@
             </summary>
             <param name="param">二维码参数</param>
         </member>
+        <member name="M:Bing.QRCode.QRCoder.QRCoderQRCodeService.GetLogo(System.String)">
+            <summary>
+            获取Logo文件
+            </summary>
+            <param name="logo">LOGO图片路径</param>
+        </member>
     </members>
 </doc>

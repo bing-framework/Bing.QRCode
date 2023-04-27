@@ -1,15 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30523.141
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_SolutionItems", "_SolutionItems", "{468C599C-82CC-4498-B04E-31145CA01172}"
-	ProjectSection(SolutionItems) = preProject
-		common.props = common.props
-		Publish.bat = Publish.bat
-		README.md = README.md
-		version.props = version.props
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-src", "01-src", "{D6C46E4E-49C1-4185-919C-F768CC6B93E3}"
 EndProject
@@ -33,6 +27,35 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{8327ADB1
 	ProjectSection(SolutionItems) = preProject
 		asset\props\misc.props = asset\props\misc.props
 		asset\props\package.props = asset\props\package.props
+		asset\props\sourcelink.env.props = asset\props\sourcelink.env.props
+		asset\props\target.feature.props = asset\props\target.feature.props
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{1616F4B3-04AE-4E54-BCA4-4D847AAE32D9}"
+	ProjectSection(SolutionItems) = preProject
+		asset\images\icon.png = asset\images\icon.png
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{22119E25-3A35-4890-BAC4-7F8718D2DA6B}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{91E5E09B-A3AE-44F0-9E2C-1FAFB5911E23}"
+	ProjectSection(SolutionItems) = preProject
+		Publish.bat = Publish.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "solution", "solution", "{6FFDF253-77D8-4597-8A8F-0D33841645BF}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		common.props = common.props
+		common.tests.props = common.tests.props
+		LICENSE = LICENSE
+		version.dev.props = version.dev.props
+		version.props = version.props
 	EndProjectSection
 EndProject
 Global
@@ -73,6 +96,10 @@ Global
 		{F0D7BF11-FF97-43C2-89D1-67D4DD99D22B} = {7315F93E-24D0-4467-8F34-5555A2406FAB}
 		{44F3ABF4-B0D3-448F-99E9-5B0E57FFABE2} = {468C599C-82CC-4498-B04E-31145CA01172}
 		{8327ADB1-77B6-4968-A112-F731C593F4C6} = {44F3ABF4-B0D3-448F-99E9-5B0E57FFABE2}
+		{1616F4B3-04AE-4E54-BCA4-4D847AAE32D9} = {44F3ABF4-B0D3-448F-99E9-5B0E57FFABE2}
+		{22119E25-3A35-4890-BAC4-7F8718D2DA6B} = {468C599C-82CC-4498-B04E-31145CA01172}
+		{91E5E09B-A3AE-44F0-9E2C-1FAFB5911E23} = {468C599C-82CC-4498-B04E-31145CA01172}
+		{6FFDF253-77D8-4597-8A8F-0D33841645BF} = {468C599C-82CC-4498-B04E-31145CA01172}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6883B0B9-B833-4497-8285-0C04C48C5E4E}

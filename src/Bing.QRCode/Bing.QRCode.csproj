@@ -6,4 +6,8 @@
 
   <Import Project="..\..\common.props" />
 
+  <!--<ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp" Version="2.1.4" />
+  </ItemGroup>-->
+
 </Project>

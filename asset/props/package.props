@@ -10,4 +10,10 @@
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageTags>bing;qrcode;</PackageTags>
   </PropertyGroup>
+
+	<PropertyGroup>
+		<!--创建符号包-->
+		<IncludeSymbols>true</IncludeSymbols>
+		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
+	</PropertyGroup>
 </Project>

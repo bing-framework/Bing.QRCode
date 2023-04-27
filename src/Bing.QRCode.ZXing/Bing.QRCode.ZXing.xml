@@ -9,27 +9,48 @@
             图片操作
             </summary>
         </member>
-        <member name="M:Bing.QRCode.ZXing.ImageUtil.Zoom(System.Drawing.Image,System.Double)">
+        <member name="M:Bing.QRCode.ZXing.ImageUtil.ToImageSharpColor(System.Drawing.Color)">
+            <summary>
+            将 <see cref="T:System.Drawing.Color"/> 转换为 <see cref="T:SixLabors.ImageSharp.Color"/>
+            </summary>
+            <param name="color">颜色</param>
+        </member>
+        <member name="M:Bing.QRCode.ZXing.ImageUtil.Zoom(SixLabors.ImageSharp.Image,System.Double)">
             <summary>
             图片缩放
             </summary>
             <param name="image">图片</param>
             <param name="n">缩放比例</param>
         </member>
-        <member name="M:Bing.QRCode.ZXing.ImageUtil.MergeImage(System.Drawing.Bitmap,System.Drawing.Bitmap,System.Double)">
+        <member name="M:Bing.QRCode.ZXing.ImageUtil.MergeImage(SixLabors.ImageSharp.Image,SixLabors.ImageSharp.Image,System.Double)">
             <summary>
             合并图片
-            参考：http://www.cnblogs.com/zoro-zero/p/6225697.html
             </summary>
             <param name="qrImage">二维码图片</param>
             <param name="logoImage">Logo图片</param>
             <param name="n">缩放比例</param>
+            <returns></returns>
         </member>
-        <member name="M:Bing.QRCode.ZXing.ImageUtil.CreateRoundedRectanglePath(System.Drawing.Rectangle,System.Int32)">
+        <member name="M:Bing.QRCode.ZXing.ImageUtil.RoundCorners(SixLabors.ImageSharp.Image,System.Int32)">
             <summary>
-            创建圆角矩形
+            设置圆角
             </summary>
-            <param name="rect">区域</param>
+            <param name="image">图片</param>
+            <param name="cornerRadius">角度</param>
+        </member>
+        <member name="M:Bing.QRCode.ZXing.ImageUtil.RoundCorners(SixLabors.ImageSharp.Processing.IImageProcessingContext,System.Int32)">
+            <summary>
+            设置圆角处理
+            </summary>
+            <param name="context">图片处理上下文</param>
+            <param name="cornerRadius">角度</param>
+        </member>
+        <member name="M:Bing.QRCode.ZXing.ImageUtil.BuildCorners(System.Int32,System.Int32,System.Single)">
+            <summary>
+            构建圆角
+            </summary>
+            <param name="imageWidth">图片宽度</param>
+            <param name="imageHeight">图片高度</param>
             <param name="cornerRadius">角度</param>
         </member>
         <member name="T:Bing.QRCode.ZXing.ZXingQRCodeService">

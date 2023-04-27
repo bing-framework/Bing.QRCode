@@ -1,8 +1,15 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <Import Project="project.props" />
 
-  <Import Project="project.dependency.props" />
-
   <Import Project="..\..\common.props" />
 
+  <ItemGroup>
+    <PackageReference Include="SixLabors.ImageSharp.Drawing" Version="1.0.0-beta15" />
+    <PackageReference Include="ZXing.Net" Version="0.16.9" />
+    <PackageReference Include="ZXing.Net.Bindings.ImageSharp.V2" Version="0.16.15" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Bing.QRCode\Bing.QRCode.csproj" />
+  </ItemGroup>
 </Project>

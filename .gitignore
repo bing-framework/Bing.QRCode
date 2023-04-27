@@ -259,3 +259,6 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+
+/src/**/Bing.*.xml
+/src/**/Bing.QRCode.*.xml
